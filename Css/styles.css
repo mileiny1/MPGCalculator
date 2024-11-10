@@ -1,0 +1,71 @@
+/* Base styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 360px;
+    text-align: center;
+}
+
+.calculator img {
+    max-width: 80px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #333;
+    font-size: 1.6rem
+}
+
+
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+.intro {
+    font-size: 2rem;
+    color: #333;
+}
+
+#animated-text {
+    display: inline-block;
+    border-right: 2px solid #333;
+    padding-right: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(30, end), blink 0.7s infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
